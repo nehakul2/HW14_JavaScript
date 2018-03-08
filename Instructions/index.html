@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UFO DATASET</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 style="color:Tomato;"><center>UFO Search</center></h1>
+     
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+
+         <!-- 
+          <input type="text" class="form-control" id="dateTime" placeholder="Date/Time">
+          <a id="search" class="btn btn-default">Search</a>
+           <input type="text" class="form-control" id="state" placeholder="State">
+           <a id="search" class="btn btn-default">State</a>
+           <input type="text" class="form-control" id="city" placeholder="City">
+           <a id="search" class="btn btn-default">City</a>
+           <input type="text" class="form-control" id="country" placeholder="Country">
+           <a id="search" class="btn btn-default">Country</a>
+             <input type="text" class="form-control" id="shape" placeholder="Shape">
+           <a id="search" class="btn btn-default">Shape</a>
+
+        </div>
+      </div>-->
+
+ <!--<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"> -->
+       <input type="text" id="myDate" onkeyup="myDateFunction()" placeholder="Search by date" title="Search Date">
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <input type="text" id="myCity" onkeyup="myFunction()" placeholder="Search by city" title="Search City">
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <input type="text" id="myState" onkeyup="myStateFunction()" placeholder="Search by state" title="Search State">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <input type="text" id="myShape" onkeyup="myShapeFunction()" placeholder="Search by shape" title="Search Shape">
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" id="myTime" onkeyup="myTimeFunction()" placeholder="Search by time" title="Search Time">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <input type="text" id="myCountry" onkeyup="myCountryFunction()" placeholder="Search by country" title="Search Country">
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <table id = "myTable" class="table table-striped">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Country</th>
+             <th>Shape</th>
+             <th>Time</th>
+              <th>Comment</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+ <div id="pagination"></div>
+  </div>
+  <script src="data.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
+
+  </div>
+</body>
+
+</html>
